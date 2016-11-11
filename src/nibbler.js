@@ -219,4 +219,4 @@ var Nibbler = function (options) {
   construct();
 };
 
-export default Nibbler;
+window.Nibbler = Nibbler;
