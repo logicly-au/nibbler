@@ -1,0 +1,18 @@
+{
+  "name": "nibbler",
+  "authors": [
+    "David Bindloss <davidb@strategicdata.com.au>"
+  ],
+  "description": "Multi-base encoder",
+  "main": "nibbler.js",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
