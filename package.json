@@ -3,14 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/nibbler.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
-    "babel-preset-es2015": "^6.18.0"
+    "babel-plugin-uglify": "^1.0.2",
+    "babel-preset-es2015": "^6.18.0",
+    "uglify": "^0.1.5"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpile": "babel src --out-dir lib",
+    "minify": "uglify -s lib/nibbler.js -o lib/nibbler.min.js",
+    "build": "npm transpile && npm minify"
   },
   "repository": {
     "type": "git",
