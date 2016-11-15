@@ -218,5 +218,4 @@ var Nibbler = function (options) {
   this.decode = decode;
   construct();
 };
-
-window.Nibbler = Nibbler;
+export default Nibbler;
