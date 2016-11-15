@@ -213,7 +213,8 @@ var Nibbler = function (options) {
   decode = function (input) {
     return translate(input, codeBits, dataBits, true);
   };
-
+  this.encode = encode;
+  this.decode = decode;
   construct();
 };
 
