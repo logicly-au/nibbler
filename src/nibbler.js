@@ -214,8 +214,6 @@ var Nibbler = function (options) {
     return translate(input, codeBits, dataBits, true);
   };
 
-  this.encode = encode;
-  this.decode = decode;
   construct();
 };
 
